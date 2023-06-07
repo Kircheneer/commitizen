@@ -84,7 +84,13 @@ cz changelog --dry-run "$(cz version -p)"
 
 Commitizen can lint your commit message for you with `cz check`.
 
-You can integrate this in your [pre-commit](https://pre-commit.com/) config with:
+First, [pre-commit](https://pre-commit.com/) needs to be installed:
+
+```
+pip install pre-commit
+```
+
+Then you can integrate commitizen into your pre-commit config with:
 
 ```yaml
 ---
